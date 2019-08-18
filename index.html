@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="./style.css" type="text/css">
+  <meta charset="utf-8">
+  <title>2d Graph</title>
+</head>
+
+<body>
+  <form id="form" action="index.html" method="post">
+    <table id="table">
+      <tbody>
+        <tr class="xRow">
+          <td>X: </td>
+          <td><input id="x0" type="number" name="X" value="X"></td>
+          <td><input id="x1" type="number" name="X" value="X"></td>
+          <td><input id="x2" type="number" name="X" value="X"></td>
+          <td><input id="x3" type="number" name="X" value="X"></td>
+          <td><input id="x4" type="number" name="X" value="X"></td>
+          <td><input id="x5" type="number" name="X" value="X"></td>
+          <td><input id="x6" type="number" name="X" value="X"></td>
+        </tr>
+        <tr class="yRow">
+          <td>Y: </td>
+          <td><input id="y0" type="number" name="Y" value="Y"></td>
+          <td><input id="y1" type="number" name="Y" value="Y"></td>
+          <td><input id="y2" type="number" name="Y" value="Y"></td>
+          <td><input id="y3" type="number" name="Y" value="Y"></td>
+          <td><input id="y4" type="number" name="Y" value="Y"></td>
+          <td><input id="y5" type="number" name="Y" value="Y"></td>
+          <td><input id="y6" type="number" name="Y" value="Y"></td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+  <div id="ButtonsHere">
+    <button id="buildGraphButton" type="button" name="button">Build Graph</button>
+    <button id="plusScaleButton" type="button" name="button">+</button>
+    <button id="minusScaleButton" type="button" name="button">-</button>
+    <button id="leftButton" type="button" name="button">←</button>
+    <button id="upButton" type="button" name="button">↑</button>
+    <button id="downButton" type="button" name="button">↓</button>
+    <button id="rightButton" type="button" name="button">→</button>
+    <button id="defaultScale" type="button" name="button">Default Scale</button>
+  </div>
+  <br>
+  <div id="RandomHere">
+    <label for="randomInput">Enter the Number of Nodes: </label>
+    <input id="randomInput" type="number" name="" value="7">
+    <button id="randomButton" type="button" name="button">Build Random Graph</button>
+  </div>
+  <br>
+  <div id="placeCanvasHere">
+  </div>
+  <div id="currentColorHere">
+    <label for="currentColorInput">Current Graph Color: </label>
+    <input id="currentColorInput" type="text" name="" value="#cc0011">
+    <!--  <textarea id="currentColorTextarea" name="currentColor" rows="1" cols="30" required>#cc0011</textarea> -->
+    <button id="changeColorButton" type="button" name="button">Change Color</button>
+    <label for="currentCoord">Current coordinate: </label>
+    <textarea id="currentCoord" name="name" rows="1" cols="40"></textarea>
+  </div>
+  <br>
+  <div class="renameAxisHere">
+    <label for="horizontalAxis">Horizontal Axis: </label>
+    <input id="horizontalAxis" type="text" name="" value="">
+    <label for="verticalAxis">Vertical Axis: </label>
+    <input id="verticalAxis" type="text" name="" value="">
+    <button id="renameAxis" type="button" name="button">Rename Axis</button>
+  </div>
+  <br>
+  <div id="legendHere">
+    <button id="legendButton" type="button" name="button">Legend (double click to rename, right click to hide/view)</button>
+  </div>
+  <script type="text/javascript" script src="./main.js" charset="utf-8">
+  </script>
+</body>
+
+</html>
